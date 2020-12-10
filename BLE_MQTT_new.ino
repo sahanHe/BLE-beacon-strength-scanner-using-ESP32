@@ -104,9 +104,7 @@ void loop() {
   char msgCharArray[5000];
   info.toCharArray(msgCharArray,5000);
   client.publish("EN3250/ESP32",info.c_str());
-  //client.publish("group1ENTC","publishedwewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwewwwewewejwiewioewewoieweuoriuwerowroweurwpruworuweruweprweporuerpeurpweruewpowetpowetuwopruweptuwptuwepotuweopdfjdfhdfdfjhdfdpupreutwpeutwpourpweoutpeowutpewoutpwoutpweuptowetwetpweptwuetoer0weee00");
-  //memset(msgCharArray,0 , sizeof(msgCharArray));
-  //client.publish("group1ENTC","{\"id\" :1,\"UoM_Wireless1\"1:-56,\"UoM_Wireless2\":-97}");
+  
   info="{\"id\" : 8 ";
   Serial.print("Devices found: ");
   Serial.println(foundDevices.getCount());
